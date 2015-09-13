@@ -55,18 +55,24 @@
     <div id="body">
     <h3>Send me an E-Mail:</h3>
 
-<form action="MAILTO:current1email1address@gmail.com" method="get" enctype="text/plain">
-<fieldset>
-<legend>Name:<br></legend>
-<input type="text" name="Name" Placeholder="Name"><br>
-E-mail:<br>
-<input type="email" name="Email" Placeholder="Email"><br>
-Comment:<br>
-<input type="text" name="Comment" Placeholder="Comment">
-<br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</fieldset>
+<form action="http://submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<label for="Name">Name*:</label>
+<input name="Name" type="text" maxlength="60" style="width:250px;" />
+<label for="FromEmailAddress">Email address*:</label>
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" />
+<label for="Comments">Comments*:</label>
+<textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea>
+* - required fields
+<input name="skip_Submit" type="submit" value="Submit" />
+<script src="http://www.100forms.com/js/FORMKEY:LRMKAYJSQM2N/SEND:XXXX@XXXX.com" type="text/javascript"></script>
 </form>
     </div>
     
