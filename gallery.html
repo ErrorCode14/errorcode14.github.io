@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <title>Home</title>
-  <link rel="shortcut icon" href="https://cloud.githubusercontent.com/assets/10983576/9917932/398b4098-5c92-11e5-9392-c2fd8b079c0b.gif">
   
   <style>
     div { 
@@ -37,6 +36,33 @@
      background-color:lawngreen;
      padding:3px;
 }
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid darkseagreen;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}	
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border: 1px solid red;
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}
     
   </style>
   
@@ -53,7 +79,14 @@
       <a href="news.html">News</a>|
     </p>
     
-    <p id="body">🛇 Working on it!! 🛇</p>
+    <div id="body">
+      
+      <div class="img">
+      <a target="_blank" href="http://prntscr.com/7pnwwv"><img src="http://prntscr.com/7pnwwv" alt="Orange" width="100" height="100"></a>
+      <div class="desc">Test Description</div>
+      </div>
+      
+    </div>
     
     <div id="social"> <h4>Find Me Here:</h4>
    
