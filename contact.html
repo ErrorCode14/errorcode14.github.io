@@ -1,102 +1,106 @@
 <!doctype html>
 <html>
   <title>Contact Me</title>
-  <link rel="shortcut icon" href="https://cloud.githubusercontent.com/assets/10983576/9917932/398b4098-5c92-11e5-9392-c2fd8b079c0b.gif">
+  <head>
+    <link rel="shortcut icon" href="https://cloud.githubusercontent.com/assets/10983576/9917932/398b4098-5c92-11e5-9392-c2fd8b079c0b.gif">
+  </head>
   <style>
-    div { 
-    font-family:Verdana;
-    float:center;
-    text-align:center;
-    display:block;
-    background-color:lightseagreen;
-    padding:10px;
-}
-   #body{
-     font-family:Verdana;
-     font-size:24px;
-     float:center;
-     text-align:center;
-     display:block;
-     background-color:lawngreen;
-     padding:20px;
-}
-   #navbar{
-     font-family:Verdana;
-     float:center;
-     text-align:center;
-     background-color:lightseagreen;
-     padding:10px;
-     width:fit;
-}
-    #social{
-     font-family:Verdana;
-     float:center;
-     text-align:center;
-     display:block;
-     background-color:lawngreen;
-     padding:3px;
-}
+  
+    body{
+      font-family:Verdana;
+      background-color:ghostwhite;
+    }
+    span{
+        font-size:10pt;
+    }
+    
+    .head{
+       background-color:lightblue;
+       padding:10px;
+       margin-bottom:20px;
+       width:80%;
+       margin-left:auto;
+       margin-right:auto;
+       text-align:center;
+       font-size:25pt;
+    }
+    
+    .nav{
+        background-color:lightgreen;
+        padding:10px;
+        margin-bottom:15px;
+        width:75%;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:15pt;
+    }
+    
+    .body{
+        background-color:powderblue;
+        width:40%;
+        float:left;
+        padding:20px;
+        margin-bottom:20px;
+        margin-left:15%;
+        font-size:15pt;
+    
+    }
+    
+    .social{
+        background-color:palegreen;
+        float:right;
+        width:20%;
+        margin-right:15%;
+        padding:20px;
+        text-align:center;
+        font-size:15pt;
+    }
+    
+    
     
   </style>
   
-  <body bgcolor="whitesmoke">
-    <div>
-    <h1>🖳 Error Code 14 🖳</h1>
-    <h2>Pixel Art, Game Development, and More!</h2>
+  <body>
+    <div class="head">
+    <p>Error Code 14</p>
+    <span><p>Contact</p></span>
     </div>
     
-    <p id="navbar">
+    <div class="nav">
       |<a href="index.html">Home</a>|
       <a href="contact.html">Contact Me</a>|
       <a href="gallery.html">Gallery</a>|
       <a href="news.html">News</a>|
-    </p>
+    </div>
     
-    <div id="body">
+    <div class="body"><form action="mailto:..current1email1address@gmail.com">
+<p>First Name:<input name="First Name" type="text" /></p>
+<p>Last Name:<input name="Last Name" type="text" /></p>
+<p>E-Mail : <input name="email" type="text" /></p>
 
-<form action="http://submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
-<script type="text/javascript">
-function ValidateForm(frm) {
-if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
-if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
-return true; }
-
-</script>
-<p>
-<h3>Send me an E-Mail:</h3>
-<label for="Name">Name*:</label>
-<br />
-<input name="Name" type="text" maxlength="60" style="width:250px;" />
-<br />
-<label for="FromEmailAddress">Email*:</label>
-<br />
-<input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" />
-<br />
-<label for="Comments">Comments*:</label>
-<br />
-<textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea>
-<br />
-* - required fields
-<br />
-<input name="skip_Submit" type="submit" value="Submit"/>
-<script src="http://www.100forms.com/js/FORMKEY:LRMKAYJSQM2N/SEND:current1email1address@gmail.com" type="text/javascript"></script>
-<a href="http://www.100forms.com" id="lnk100" title="web forms">web forms</a>
-</form>
-</p>
-    </div> </div> </p>
+  <p>Comments:</p>
+  <textarea name="Comments" cols="30" rows="5"></textarea>
+  <br />
+  <br />
+  <input name="Submit" type="submit" value="Click Here to Submit" />
+  </form>
+  </div>
     
-    <div id="social"> <h4>Find Me Here:</h4>
+    <div class="social"> <p>Find Me Here:</p>
    
+   <!--Twitter Tweets-->
+   <a class="twitter-timeline" href="https://twitter.com/ErrorCode14TW" data-widget-id="642783232073854977">Tweets by @ErrorCode14TW</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+   <br />
     <!--Twitter Follow Button-->
     <a href="https://twitter.com/ErrorCode14TW" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ErrorCode14TW</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<br />
     <!--Google Plus +1 Button-->
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/114133776254380563999" data-rel="author"></div>
-   
-   <!--Instagram Follow Button-->
+<br />  
+    <!--Instagram Follow Button-->
 <style>.ig-b- { display: inline-block; }
 .ig-b- img { visibility: hidden; }
 .ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
@@ -104,7 +108,7 @@ return true; }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
 .ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
 <a href="http://instagram.com/errorcode14?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
-   
+    
     </div>
     
     
