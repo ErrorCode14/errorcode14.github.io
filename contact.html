@@ -1,82 +1,113 @@
-<!doctype html>
 <html>
-  <title>Contact Me</title>
+  <title>G</title>
   <head>
-    <link rel="shortcut icon" href="https://cloud.githubusercontent.com/assets/10983576/9917932/398b4098-5c92-11e5-9392-c2fd8b079c0b.gif">
-  </head>
-  <style>
-  
-    body{
-      font-family:Verdana;
-      background-color:ghostwhite;
-    }
-    span{
-        font-size:15pt;
-    }
-    
-    .head{
-       background-color:lightblue;
-       padding:10px;
-       margin-bottom:20px;
-       width:80%;
-       margin-left:auto;
-       margin-right:auto;
-       text-align:center;
-       font-size:25pt;
-    }
-    
-    .nav{
-        background-color:lightgreen;
-        padding:10px;
-        margin-bottom:15px;
-        width:75%;
+    <style>
+      
+      @import 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow';
+      
+      .head{
+        background-color:#0059b3;
+        color:white;
+        padding:15px;
+        margin-bottom:0px;
+        width:70%;
         margin-left:auto;
         margin-right:auto;
-        font-size:15pt;
-    }
-    
-    .body{
-        background-color:powderblue;
-        width:40%;
-        float:left;
-        padding:20px;
-        margin-bottom:20px;
-        margin-left:15%;
-        font-size:15pt;
-    
-    }
-    
-    .social{
-        background-color:palegreen;
-        float:right;
-        width:20%;
-        margin-right:15%;
-        padding:20px;
+        margin-top:10%;
         text-align:center;
-        font-size:15pt;
-    }
-    
-    
-    
-  </style>
+        font-size:5em;
+        box-shadow: 0px 5px 5px black;
+        font-family: 'PT Sans Narrow', sans-serif;
+      }
+      
+      .bodybg{
+        background-color:#e6f2ff;
+        color:black;
+        padding-left:15px;
+        padding-right:15px;
+        padding-top:15px;
+        padding-bottom:15px;
+        margin-top:0px;
+        width:70%;
+        text-align:center;
+        font-size:2em;
+        margin-left:auto;
+        margin-right:auto;
+        word-wrap:normal;
+        box-shadow: 0px .1px 5px black;
+        font-family: 'PT Sans Narrow', sans-serif;
+      }
+      
+      
+      .nav1{
+      background-color:#4da6ff;
+      color:black;
+      padding-left:15px;
+      padding-right:15px;
+      padding-top:10px;
+      padding-bottom:10px;
+      margin-top:0px;
+      margin-bottom:0px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+      font-size:1.25em;
+      width:70%;
+      box-shadow: 0px .1px 5px black;
+      font-family: 'PT Sans Narrow', sans-serif;
+      }
+      
+      a:link, a:visited {
+    background-color: #0080ff;
+    color: white;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+a:hover, a:active {
+    background-color: #003366;
+}
+.social{
+    background-color:#003366;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-bottom:10%;
+    color:white;
+    box-shadow: 0px .1px 5px black;
+}
+    </style>
+  </head>
   
-  <body>
-    <div class="head">
-    <p>Error Code 14</p>
-    <span><p>Contact</p></span>
+  
+  <body bgcolor="#e6f2ff">
+    <div class="head">Error Code 14</div>
+    <div class="nav1">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="youtube.html">YouTube</a>
     </div>
-    
-    <div class="nav">
-      |<a href="index.html">Home</a>|
-      <a href="contact.html">Contact Me</a>|
-      <a href="gallery.html">Gallery</a>|
-      <a href="news.html">News</a>|
-    </div>
-    
-    <div class="body"><form action="mailto:current1email1address@gmail.com">
-<p>First Name:<input name="First Name" type="text" /></p>
-<p>Last Name:<input name="Last Name" type="text" /></p>
-<p>E-Mail : <input name="email" type="text" /></p>
+    <div class="bodybg">
+<form action="mailto:current1email1address@gmail.com">
+<p>First Name:</p><input name="First Name" type="text"/>
+<p>Last Name:</p><input name="Last Name" type="text"/>
+<p>E-Mail:</p><input name="email" type="text"/>
 
   <p>Comments:</p>
   <textarea name="Comments" cols="30" rows="5"></textarea>
@@ -84,34 +115,16 @@
   <br />
   <input name="Submit" type="submit" value="Click Here to Submit" />
   </form>
-  <p> This form will use whatever email program you use on your device. If there are "dots" before the email, remove them. :D</p>
-  </div>
-    
-    <div class="social"> <p>Find Me Here:</p>
-   
-   <!--Twitter Tweets-->
-   <a class="twitter-timeline" href="https://twitter.com/ErrorCode14TW" data-widget-id="642783232073854977">Tweets by @ErrorCode14TW</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-   <br />
-    <!--Twitter Follow Button-->
+<p> Any email program you have on your PC or Phone will be used to send the email. If there are any dots in the email, please remove them.</p>
+</div>
+    <div class="social"> Find me here: </br>
+<!--Twitter-->
     <a href="https://twitter.com/ErrorCode14TW" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ErrorCode14TW</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<br />
-    <!--Google Plus +1 Button-->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/114133776254380563999" data-rel="author"></div>
-<br />  
-    <!--Instagram Follow Button-->
-<style>.ig-b- { display: inline-block; }
-.ig-b- img { visibility: hidden; }
-.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-.ig-b-v-24 { width: 137px; height: 24px; background: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24.png) no-repeat 0 0; }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-.ig-b-v-24 { background-image: url(//badges.instagram.com/static/images/ig-badge-view-sprite-24@2x.png); background-size: 160px 178px; } }</style>
-<a href="http://instagram.com/errorcode14?ref=badge" class="ig-b- ig-b-v-24"><img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a>
-    
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!--Google-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/114133776254380563999" data-rel="author"></div>
     </div>
-    
-    
   </body>
+  
 </html>
